@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InterviewIQ | Resume Upload</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="resume-container">
+    <h2>Upload Your Resume</h2>
+    <p class="resume-subtitle">
+      Upload your resume and choose the role you are preparing for
+    </p>
+
+    <form id="resumeForm">
+      <label class="file-label">
+        Upload Resume (PDF only)
+        <input type="file" accept=".pdf" required />
+      </label>
+
+      <label class="select-label">
+        Target Role
+        <select required>
+          <option value="">Select a role</option>
+          <option value="sde">Software Development Engineer</option>
+          <option value="ml">Machine Learning Engineer</option>
+          <option value="backend">Backend Engineer</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn">Analyze Resume</button>
+    </form>
+  </div>
+
+  <script src="resume.js"></script>
+</body>
+</html>
